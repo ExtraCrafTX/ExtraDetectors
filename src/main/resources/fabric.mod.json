@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "extradetectors",
+  "version": "${version}",
+  "name": "ExtraDetectors",
+  "description": "Adds new detector types",
+  "authors": [
+    "ExtraCrafTX"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/extradetectors/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.extracraftx.minecraft.extradetectors.ExtraDetectors"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}

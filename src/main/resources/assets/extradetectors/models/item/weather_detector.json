@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "extradetectors:item/weather_detector_clear"
+    },
+    "overrides": [
+        { "predicate": { "weather": 0 }, "model": "extradetectors:item/weather_detector" },
+        { "predicate": { "weather": 1 }, "model": "extradetectors:item/weather_detector_rain" },
+        { "predicate": { "weather": 2 }, "model": "extradetectors:item/weather_detector_snow" },
+        { "predicate": { "weather": 3 }, "model": "extradetectors:item/weather_detector_thunder" },
+        { "predicate": { "weather": 4 }, "model": "extradetectors:item/weather_detector_nether" },
+        { "predicate": { "weather": 5 }, "model": "extradetectors:item/weather_detector_end" }
+    ]
+}
