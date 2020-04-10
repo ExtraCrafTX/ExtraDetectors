@@ -1,5 +1,6 @@
 package com.extracraftx.minecraft.extradetectors.item;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
@@ -30,6 +31,9 @@ public class WeatherDetectorItem extends Item{
                     if(entity == null)
                         return 0;
                     world = entity.world;
+                }
+                if (entity == null) {
+                    entity = MinecraftClient.getInstance().player;
                 }
                 Biome biome = world.getBiome(entity.getBlockPos());
                 if(biome.equals(Biomes.NETHER))
